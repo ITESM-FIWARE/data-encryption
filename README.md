@@ -11,7 +11,7 @@ The encryption service can be installed on every Operative System that supports 
 
 The following software must be previously installed in the server which will hold the encryption service.
 1. Docker
-1. Postman
+1. Postman/Insomnia
 
 Furthermore, the following ports containers are required.
 1. ngsi_nodejs 8000 (only for stand-alone encryption service that uses tokens)
