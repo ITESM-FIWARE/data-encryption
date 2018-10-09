@@ -1,10 +1,10 @@
 # NGSI-Encryption-Layer-as-a-Service
 
-This document describes the encryption service developed at ITESM as a tool for encrypt and decrypt FIWARE data models. The application can be seen as two stand-alone services, one that uses tokens as a security measure and the second one that uses sessions as security measure. Both stand-alone services enable the encryption and decryption of all up-to-date available FIWARE data models published in [FIWARE Data Models official site](https://www.fiware.org/developers/data-models/). 
-First, the overall overview of the encryption service is described; secondly, the stand-alone service that use tokens is introduced; lastly, the stand-alone service that use sessions is detailed.
+This document describes the encryption service developed at ITESM as a tool for encrypting and decrypting FIWARE data models. The application can be seen as two stand-alone services, one that uses tokens as a security measure and the second one that uses sessions as a security measure. Both stand-alone services enable the encryption and decryption of all up-to-date available FIWARE data models published in [FIWARE Data Models official site](https://www.fiware.org/developers/data-models/). 
+First, the overall overview of the encryption service is described; secondly, the stand-alone service that uses tokens is introduced; lastly, the stand-alone service that uses sessions is detailed.
 
 ## Overall overview
-In the following, the service specifications are described. This specifications applies to both stand-alone services mentioned above.
+In the following, the service specifications are described. This specification applies to both stand-alone services mentioned above.
 
 ### Prerequisites
 The encryption service can be installed on every Operative System that supports Docker.
@@ -31,10 +31,11 @@ In the following are described several details about the encryption service.
 
 * Due to context broker’s limits on attribute lengths, the encryption algorithm relies on 8-bit keys.
 * For each attribute of the JSON payload, a key is generated. All the keys are integrated into a single file, which is sent to the user.
-* Sends one key (5) via email to user (whenever you encrypt at least one thing).
+* Sends one key (5) via email to the user (whenever you encrypt at least one thing).
 
 ### Initial service authentication
-The initial authentication procedure perform by the encryption service is performed via an email verification process. This process allows a user to authenticate itself within the service. It is noteworthy that the authentication procedure currently works only with Gmail accounts. The process is simplified as follows:
+The initial authentication procedure performs by the encryption service is performed via an email verification process. This process allows a user to authenticate itself within the service. It is noteworthy that the authentication procedure currently works only with Gmail accounts. The process is simplified as follows:
+
 
 ```
 Input: 3 and 4
@@ -50,6 +51,11 @@ HTTP endpoint:
 	Params (Form URL Encoded):
 		name: 3
 		email: 4
+	
+	Headers:
+		Fiware-Service:'default'
+		Fiware-ServicePath:'/'
+
 ```
 
 ### Services within encryption service
@@ -62,16 +68,28 @@ The services that both stand-alone implemented services comprises are:
 * Decrypt/ocb (Decryption of entities from Context Broker URL)
 
 ## Encryption service with tokens
-The stand-alone encryption service that uses tokens as verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed.
+The stand-alone encryption service that uses tokens as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed.
 
 ### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
 1. Locate at the service folder location: ```cd ../NGSI_NODEJS_DOCKER```
-1. Execute the docker pull command: ```docker pull ngsi/encryption_layer_as_a_service_nodejs```
-1. Start the docker compose: ```sudo docker-compose up -d```
-1. Check docker containers status: ```docker ps```
-1. Verify that the service is up and running: ```http://localhost:8000```
+
+	![imagen1](https://user-images.githubusercontent.com/39604832/46701972-2d23b980-cbe7-11e8-9010-24025322c196.png)
+
+2. Execute the docker pull command: ```docker pull ngsi/encryption_layer_as_a_service_nodejs```
+3. Start the docker compose: ```sudo docker-compose up -d```
+
+	![imagen2](https://user-images.githubusercontent.com/39604832/46699889-c6030680-cbe0-11e8-8fe3-8c19b8ae3e7b.png)
+
+4. Check docker containers status: ```docker ps```
+
+	![imagen3](https://user-images.githubusercontent.com/39604832/46701974-2d23b980-cbe7-11e8-9139-03e789c82c44.png)
+	![imagen4](https://user-images.githubusercontent.com/39604832/46701975-2d23b980-cbe7-11e8-8de1-fa66adfac05b.png)
+
+5. Verify that the service is up and running: ```http://localhost:8000```
+
+	![imagen5](https://user-images.githubusercontent.com/39604832/46701976-2d23b980-cbe7-11e8-8345-385e0cca8aea.png)
 
 ### Use of services supported by the encryption service
 The requirements and procedure to use the several services within encryption service are described below. 
@@ -92,6 +110,8 @@ Postman/Insomnia specifications
 			email: 4
 ```
 
+   ![imagen6](https://user-images.githubusercontent.com/39604832/46701977-2dbc5000-cbe7-11e8-9a5d-9cf84960f03d.png)
+
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services only if the user loses his token.
 ```
@@ -108,6 +128,8 @@ Postman/Insomnia specifications
 			email: 4
 ```
 
+   ![imagen7](https://user-images.githubusercontent.com/39604832/46701978-2dbc5000-cbe7-11e8-9e23-bf5d77eee244.png)
+
 #### Encrypt
 This service allows the user to upload a local JSON file for encryption.
 ```
@@ -123,7 +145,13 @@ Postman/Insomnia specifications
 			json: document in JSON format
 		Headers:
 			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen8](https://user-images.githubusercontent.com/39604832/46701979-2dbc5000-cbe7-11e8-9580-ba66eafd3bbf.png)
+   ![imagen9](https://user-images.githubusercontent.com/39604832/46701980-2dbc5000-cbe7-11e8-9b41-35bb4544d976.png)
+   ![imagen10](https://user-images.githubusercontent.com/39604832/46701981-2dbc5000-cbe7-11e8-861d-52afe1390885.png)
 
 #### Decrypt
 This service allows the user to upload a local JSON file for decryption.
@@ -141,7 +169,12 @@ Postman/Insomnia specifications
 			key: keys sent to users email
 		Headers:
 			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen11](https://user-images.githubusercontent.com/39604832/46701982-2dbc5000-cbe7-11e8-9880-36b1d72016a0.png)
+   ![imagen12](https://user-images.githubusercontent.com/39604832/46701983-2dbc5000-cbe7-11e8-9d83-0f4085cbc028.png)
 
 #### Encrypt/ocb
 This service allows the user to encrypt entities from a Context Broker URL.
@@ -161,7 +194,11 @@ Postman/Insomnia specifications
 			urlTo: http://192.168.10.193:1026/v2/entities
 		Headers:
 			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen13](https://user-images.githubusercontent.com/39604832/46701984-2e54e680-cbe7-11e8-80fc-b3d0452e90a8.png)
 
 #### Decrypt/ocb
 This service allows the user to decrypt entities from a Context Broker URL.
@@ -182,19 +219,37 @@ Postman/Insomnia specifications
 			key : keys sent to users email
 		Headers:
 			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
 
+   ![imagen14](https://user-images.githubusercontent.com/39604832/46701986-2e54e680-cbe7-11e8-9a8d-257a5e7aeb47.png)
+
 ## Encryption service with sessions
-The stand-alone encryption service that uses sessions as verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed.
+The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed.
 
 ### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
 1. Locate at the service folder location: ```cd ../NGSI_PYTHON_DOCKER/```
-1. Create a new folder named “data”: ```mkdir data```
-1. Start the docker compose: ```sudo docker-compose up -d```
-1. Check docker containers status: ```docker ps```
-1. Verify that the service is up and running: ```http://localhost:2121```
+
+	![imagen15](https://user-images.githubusercontent.com/39604832/46701987-2e54e680-cbe7-11e8-9634-c62be7b676d9.png)
+
+2. Create a new folder named “data”: ```mkdir data```
+
+	![imagen16](https://user-images.githubusercontent.com/39604832/46701988-2e54e680-cbe7-11e8-8e7f-e00182ba71f8.png)
+
+3. Start the docker compose: ```sudo docker-compose up -d```
+
+	![imagen17](https://user-images.githubusercontent.com/39604832/46701990-2e54e680-cbe7-11e8-8602-270fa121f8a4.png)
+
+4. Check docker containers status: ```docker ps```
+
+	![imagen18](https://user-images.githubusercontent.com/39604832/46701991-2e54e680-cbe7-11e8-84fc-18a46010a29d.png)
+
+5. Verify that the service is up and running: ```http://localhost:2121```
+
+	![imagen19](https://user-images.githubusercontent.com/39604832/46701992-2eed7d00-cbe7-11e8-8603-8dd47f8066e4.png)
 
 ### Use of services supported by the encryption service
 The requirements and procedure to use the several services within encryption service are described below. 
@@ -216,6 +271,9 @@ Postman/Insomnia specifications
 			password: user password
 ```
 
+   ![imagen20](https://user-images.githubusercontent.com/39604832/46701993-2eed7d00-cbe7-11e8-8c5d-59ed7fd86c19.png)
+   ![imagen21](https://user-images.githubusercontent.com/39604832/46701994-2eed7d00-cbe7-11e8-8d98-d622df50e96a.png)
+
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services.
 ```
@@ -230,7 +288,12 @@ Postman/Insomnia specifications
 		Input params:
 			name: 3
 			password: user password
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen22](https://user-images.githubusercontent.com/39604832/46701995-2eed7d00-cbe7-11e8-97c2-5dbd03f78ad0.png)
 
 #### Encrypt
 This service allows the user to upload a local JSON file for encryption.
@@ -245,7 +308,13 @@ Postman/Insomnia specifications
 		URL: http://127.0.0.1:2121/encrypt
 		Input params:
 			json: document in JSON format
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen23](https://user-images.githubusercontent.com/39604832/46701998-2eed7d00-cbe7-11e8-82cf-aea7ee1cd573.png)
+   ![imagen24](https://user-images.githubusercontent.com/39604832/46701999-2eed7d00-cbe7-11e8-8b7f-4faf490d6c18.png)
 
 #### Decrypt
 This service allows the user to upload a local JSON file for decryption.
@@ -261,7 +330,12 @@ Postman/Insomnia specifications
 		Input params:
 			json: document in JSON format
 			key: keys sent to users email
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
 
 #### Encrypt/ocb
 This service allows the user to encrypt entities from a Context Broker URL.
@@ -279,7 +353,13 @@ Postman/Insomnia specifications
 			id: id attribute to identify the entity
 			type: type attribute to identify the entity
 			urlTo: http://192.168.10.193:1026/v2/entities
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen26](https://user-images.githubusercontent.com/39604832/46702001-2f861380-cbe7-11e8-8fa0-c7257f67aa53.png)
+   ![imagen27](https://user-images.githubusercontent.com/39604832/46702002-2f861380-cbe7-11e8-8846-c08867501548.png)
 
 #### Decrypt/ocb
 This service allows the user to decrypt entities from a Context Broker URL.
@@ -298,7 +378,12 @@ Postman/Insomnia specifications
 			type: type attribute to identify the entity
 			urlTo: http://192.168.10.193:1026/v2/entities
 			key : keys sent to users email
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
 ```
+
+   ![imagen28](https://user-images.githubusercontent.com/39604832/46702004-2f861380-cbe7-11e8-8f2b-1e8d4ffd39d0.png)
 
 #### Sign out
 This service allows the user to sign out of the encryption service.
@@ -314,4 +399,6 @@ Postman/Insomnia specifications
 		Input params:
 		  None
 ```
+
+![imagen29](https://user-images.githubusercontent.com/39604832/46702005-2f861380-cbe7-11e8-8745-d371283036f7.png)
 
