@@ -1,0 +1,682 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NGSI-Encryption_layer_as_a_service",
+		"_postman_id": "87db253e-bee1-26c1-671a-ac772f184f4f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Node",
+			"description": "",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"url": "http://localhost:8000/authenticate",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"url": "http://localhost:8000/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Ecrypt from OCB to OCB",
+					"request": {
+						"url": "http://localhost:8000/encrypt/ocb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.4:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "urlTo",
+									"value": "http://172.17.0.6:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt from OCB to OCB",
+					"request": {
+						"url": "http://localhost:8000/decrypt/ocb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.6:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "urlTo",
+									"value": "http://172.17.0.4:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "647521,679253\n242885,716141\n266771,576397\n248725,338593",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Encrypt local",
+					"request": {
+						"url": "http://localhost:8000/encrypt",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\n   \"id\": \"Room2\",\n   \"type\": \"Room\",\n   \"temperature\": {\n     \"value\": 23,\n     \"type\": \"Number\"\n   },\n   \"pressure\": {\n     \"value\": 720,\n     \"type\": \"Number\"\n   }\n}\n",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt local",
+					"request": {
+						"url": "http://localhost:8000/decrypt",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\n\t\"id\": \"Room2\",\n\t\"type\": \"Room\",\n\t\"temperature\": {\n\t\t\"value\": \"164132*438779*\",\n\t\t\"type\": \"288351*327061*68246*594211*492554*339128*385436*288351*\"\n\t},\n\t\"pressure\": {\n\t\t\"value\": \"207184*423552*243679*\",\n\t\t\"type\": \"700941*109612*25168*41689*170456*30239*572679*700941*\"\n\t}\n}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "455009,523339\n564757,715427\n514925,517031\n616717,721453",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Encrypt From OCB to Local",
+					"request": {
+						"url": "http://localhost:8000/encrypt/ocb/local",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.6:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt from OCB to Local",
+					"request": {
+						"url": "http://localhost:8000/encrypt/ocb/local",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "UAlkvd1pxpNNZKei3fnG_hTWz7RLiGjCuha5ksNWjcg",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.6:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "647521,679253\n242885,716141\n266771,576397\n248725,338593",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Python",
+			"description": "",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"url": "http://localhost:2121/signup",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "user123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user123@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"url": "http://localhost:2121/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Local encrypt",
+					"request": {
+						"url": "http://localhost:2121/encrypt",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\n\"id\": \"Room1\",\n\"type\": \"Room\",\n\"pressure\": {\n\"type\": \"Integer\",\n\"value\": 720,\n\"metadata\": {}\n},\n\"temperature\": {\n\"type\": \"Float\",\n\"value\": 23,\n\"metadata\": {}\n}\n}",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Local encryption"
+					},
+					"response": []
+				},
+				{
+					"name": "Local decrypt",
+					"request": {
+						"url": "http://localhost:2121/decrypt",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "json",
+									"value": "{\n    \"id\": \"Room1\", \n    \"type\": \"Room\", \n    \"pressure\": {\n        \"type\": \"618528*581202*480531*90470*255263*518646*255263*436919*618528*\", \n        \"value\": \"10339*181401*391328*\", \n        \"metadata\": {}\n    }, \n    \"temperature\": {\n        \"type\": \"150025*113765*74402*337199*573166*88968*150025*\", \n        \"value\": \"658892*713746*\", \n        \"metadata\": {}\n    }\n}",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "333581,766771\n361843,650849\n435253,582479\n679013,777083",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Encript from OCB to OCB",
+					"request": {
+						"url": "http://localhost:2121/decrypt/ocb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.5:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "urlTo",
+									"value": "http://172.17.0.7:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decript from OCB to OCB",
+					"request": {
+						"url": "http://localhost:2121/decrypt/ocb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.5:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "urlTo",
+									"value": "http://172.17.0.7:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "29741,579727\n224123,949469\n200909,720701\n241601,544967",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt from OCB to Local",
+					"request": {
+						"url": "http://localhost:2121/decrypt/ocb/local",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.5:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "29741,579727\n224123,949469\n200909,720701\n241601,544967",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Encrypt from OCB to Local",
+					"request": {
+						"url": "http://localhost:2121/encrypt/ocb/local",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "urlFrom",
+									"value": "http://172.17.0.5:1026/v2/entities",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "Room1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Room",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"url": "http://localhost:2121/logout",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
