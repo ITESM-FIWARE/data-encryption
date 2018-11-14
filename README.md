@@ -447,7 +447,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
-<a href="https://ibb.co/fJVsaL"><img src="https://preview.ibb.co/edBLUf/mail.png" alt="mail" border="0"></a>
+![imagen27](https://user-images.githubusercontent.com/39604832/46702002-2f861380-cbe7-11e8-8846-c08867501548.png)
 
 #### Decrypt/ocb/local
 This service allows the user to decrypt entities from a Context Broker URL.
