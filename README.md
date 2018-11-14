@@ -269,7 +269,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 
-   
+   ![image11](https://user-images.githubusercontent.com/38046220/48510488-a1bacb00-e819-11e8-9f66-3e57c73bd7b2.png)
 
 ## Encryption service with sessions
 The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
