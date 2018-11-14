@@ -394,7 +394,7 @@ Output:
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:2121/encrypt/ocb
+		URL: http://127.0.0.1:2121/encrypt/ocb/local
 		Input params:
 			urlFrom: example http://127.0.0.1:1026/v2/entities
 			id: id attribute to identify the entity
@@ -414,7 +414,7 @@ Output:
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:2121/decrypt/ocb
+		URL: http://127.0.0.1:2121/decrypt/ocb/local
 		Input params:
 			urlFrom: example http://127.0.0.1:1026/v2/entities
 			id: id attribute to identify the entity
