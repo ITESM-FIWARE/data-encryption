@@ -384,6 +384,47 @@ Postman/Insomnia specifications
 
    ![imagen28](https://user-images.githubusercontent.com/39604832/46702004-2f861380-cbe7-11e8-8f2b-1e8d4ffd39d0.png)
 
+#### Encrypt/ocb/local
+This service allows the user to encrypt entities from a Context Broker URL and save the encrypted json file locally.
+```
+Input:
+	1 and 2
+Output:
+	5 via email or postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:2121/encrypt/ocb
+		Input params:
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+
+#### Decrypt/ocb/local
+This service allows the user to decrypt entities from a Context Broker URL and save the decrypted json file locally.
+```
+Input:
+	1, 2, and 5
+Output:
+	2 via postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:2121/decrypt/ocb
+		Input params:
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
+			key : keys sent to users email
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+
 #### Sign out
 This service allows the user to sign out of the encryption service.
 ```
@@ -400,4 +441,3 @@ Postman/Insomnia specifications
 ```
 
 ![imagen29](https://user-images.githubusercontent.com/39604832/46702005-2f861380-cbe7-11e8-8745-d371283036f7.png)
-
