@@ -467,7 +467,7 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-
+![imagen30](https://ibb.co/e96th0)
 
 #### Sign out
 This service allows the user to sign out of the encryption service.
