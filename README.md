@@ -245,6 +245,8 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 
+   ![image10](https://user-images.githubusercontent.com/38046220/48510388-64563d80-e819-11e8-8eb7-d8f77d936095.png)
+
 #### Decrypt/ocb-local
 This service allows the user to decrypt entities from a Context Broker URL.
 ```
@@ -266,6 +268,8 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
+
+   
 
 ## Encryption service with sessions
 The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
