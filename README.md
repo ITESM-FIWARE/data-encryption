@@ -446,6 +446,7 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
+<a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
 
 #### Decrypt/ocb/local
 This service allows the user to decrypt entities from a Context Broker URL.
@@ -468,7 +469,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <a href="https://ibb.co/e96th0"><img src="https://preview.ibb.co/fRFVUf/Decrypt-from-OCB-to-Local.png" alt="Decrypt-from-OCB-to-Local" border="0"></a>
-<a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
+<a href="https://ibb.co/fJVsaL"><img src="https://preview.ibb.co/edBLUf/mail.png" alt="mail" border="0"></a>
 
 #### Sign out
 This service allows the user to sign out of the encryption service.
