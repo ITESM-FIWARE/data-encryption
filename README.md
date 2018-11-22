@@ -437,7 +437,7 @@ Postman/Insomnia specifications
 
    ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
 
-#### Decrypt/ocb-local
+#### Decrypt/ocb/local
 This service allows the user to decrypt entities from a Context Broker URL.
 ```
 Input:
@@ -447,7 +447,7 @@ Output:
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:2121/decrypt/ocb-local
+		URL: http://127.0.0.1:2121/decrypt/ocb/local
 		Input params:
 			urlFrom: example http://127.0.0.1:1026/v2/entities
 			id: id attribute to identify the entity
