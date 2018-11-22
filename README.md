@@ -370,7 +370,7 @@ Postman/Insomnia specifications
    ![imagen23](https://user-images.githubusercontent.com/39604832/46701998-2eed7d00-cbe7-11e8-82cf-aea7ee1cd573.png)
    ![imagen24](https://user-images.githubusercontent.com/39604832/46701999-2eed7d00-cbe7-11e8-8b7f-4faf490d6c18.png)
 
-#### Encrypt/ocb-local
+#### Encrypt/ocb/local
 This service allows the user to encrypt entities from a Context Broker URL.
 ```
 Input:
@@ -380,7 +380,7 @@ Output:
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:2121/encrypt/ocb-local
+		URL: http://127.0.0.1:2121/encrypt/ocb/local
 		Input params:
 			urlFrom: example http://127.0.0.1:1026/v2/entities
 			id: id attribute to identify the entity
