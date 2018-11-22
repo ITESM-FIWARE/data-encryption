@@ -160,28 +160,28 @@ Postman/Insomnia specifications
    ![imagen9](https://user-images.githubusercontent.com/39604832/46701980-2dbc5000-cbe7-11e8-9b41-35bb4544d976.png)
    ![imagen10](https://user-images.githubusercontent.com/39604832/46701981-2dbc5000-cbe7-11e8-861d-52afe1390885.png)
 
-#### Decrypt
-This service allows the user to upload a local JSON file for decryption.
+#### Encrypt/ocb-local
+This service allows the user to encrypt entities from a Context Broker URL.
 ```
 Input:
-	1 and 5
+	1 and 2
 Output:
-	2 via postman/insomnia interface
+	2 via postman/insomnia interface and 5 via email
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:8000/decrypt
+		URL: http://127.0.0.1:8000/encrypt/ocb-local
 		Input params:
-			json: document in JSON format
-			key: keys sent to users email
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
 		Headers:
 			Authorization: user token
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
 
-   ![imagen11](https://user-images.githubusercontent.com/39604832/46701982-2dbc5000-cbe7-11e8-9880-36b1d72016a0.png)
-   ![imagen12](https://user-images.githubusercontent.com/39604832/46701983-2dbc5000-cbe7-11e8-9d83-0f4085cbc028.png)
+   ![image10](https://user-images.githubusercontent.com/38046220/48510388-64563d80-e819-11e8-8eb7-d8f77d936095.png)
 
 #### Encrypt/ocb
 This service allows the user to encrypt entities from a Context Broker URL.
@@ -207,6 +207,53 @@ Postman/Insomnia specifications
 
    ![imagen13](https://user-images.githubusercontent.com/39604832/46701984-2e54e680-cbe7-11e8-80fc-b3d0452e90a8.png)
 
+#### Decrypt
+This service allows the user to upload a local JSON file for decryption.
+```
+Input:
+	1 and 5
+Output:
+	2 via postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:8000/decrypt
+		Input params:
+			json: document in JSON format
+			key: keys sent to users email
+		Headers:
+			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+
+   ![imagen11](https://user-images.githubusercontent.com/39604832/46701982-2dbc5000-cbe7-11e8-9880-36b1d72016a0.png)
+   ![imagen12](https://user-images.githubusercontent.com/39604832/46701983-2dbc5000-cbe7-11e8-9d83-0f4085cbc028.png)
+
+#### Decrypt/ocb-local
+This service allows the user to decrypt entities from a Context Broker URL.
+```
+Input:
+	1, 2, and 5
+Output:
+	2 via postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:8000/decrypt/ocb-local
+		Input params:
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
+			key : keys sent to users email
+		Headers:
+			Authorization: user token
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+
+   ![image11](https://user-images.githubusercontent.com/38046220/48510488-a1bacb00-e819-11e8-9f66-3e57c73bd7b2.png)
+
 #### Decrypt/ocb
 This service allows the user to decrypt entities from a Context Broker URL.
 ```
@@ -231,53 +278,6 @@ Postman/Insomnia specifications
 ```
 
    ![imagen14](https://user-images.githubusercontent.com/39604832/46701986-2e54e680-cbe7-11e8-9a8d-257a5e7aeb47.png)
-
-#### Encrypt/ocb-local
-This service allows the user to encrypt entities from a Context Broker URL.
-```
-Input:
-	1 and 2
-Output:
-	2 via postman/insomnia interface and 5 via email
-
-Postman/Insomnia specifications
-	Http endpoint:
-		URL: http://127.0.0.1:8000/encrypt/ocb-local
-		Input params:
-			urlFrom: example http://127.0.0.1:1026/v2/entities
-			id: id attribute to identify the entity
-			type: type attribute to identify the entity
-		Headers:
-			Authorization: user token
-			Fiware-Service:'default'
-			Fiware-ServicePath:'/'
-```
-
-   ![image10](https://user-images.githubusercontent.com/38046220/48510388-64563d80-e819-11e8-8eb7-d8f77d936095.png)
-
-#### Decrypt/ocb-local
-This service allows the user to decrypt entities from a Context Broker URL.
-```
-Input:
-	1, 2, and 5
-Output:
-	2 via postman/insomnia interface
-
-Postman/Insomnia specifications
-	Http endpoint:
-		URL: http://127.0.0.1:8000/decrypt/ocb
-		Input params:
-			urlFrom: example http://127.0.0.1:1026/v2/entities
-			id: id attribute to identify the entity
-			type: type attribute to identify the entity
-			key : keys sent to users email
-		Headers:
-			Authorization: user token
-			Fiware-Service:'default'
-			Fiware-ServicePath:'/'
-```
-
-   ![image11](https://user-images.githubusercontent.com/38046220/48510488-a1bacb00-e819-11e8-9f66-3e57c73bd7b2.png)
 
 ## Encryption service with sessions
 The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
@@ -370,26 +370,27 @@ Postman/Insomnia specifications
    ![imagen23](https://user-images.githubusercontent.com/39604832/46701998-2eed7d00-cbe7-11e8-82cf-aea7ee1cd573.png)
    ![imagen24](https://user-images.githubusercontent.com/39604832/46701999-2eed7d00-cbe7-11e8-8b7f-4faf490d6c18.png)
 
-#### Decrypt
-This service allows the user to upload a local JSON file for decryption.
+#### Encrypt/ocb-local
+This service allows the user to encrypt entities from a Context Broker URL.
 ```
 Input:
-	1 and 5
+	1 and 2
 Output:
-	2 via postman/insomnia interface
+	5 via email or postman/insomnia interface
 
 Postman/Insomnia specifications
 	Http endpoint:
-		URL: http://127.0.0.1:2121/decrypt
+		URL: http://127.0.0.1:2121/encrypt/ocb-local
 		Input params:
-			json: document in JSON format
-			key: keys sent to users email
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
 		Headers:
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-
-   ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
+<a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
+![mail](https://user-images.githubusercontent.com/38957081/48510835-9916c480-e81a-11e8-90cb-39d5d9ca2ffa.png)
 
 #### Encrypt/ocb
 This service allows the user to encrypt entities from a Context Broker URL.
@@ -415,6 +416,49 @@ Postman/Insomnia specifications
    ![imagen26](https://user-images.githubusercontent.com/39604832/46702001-2f861380-cbe7-11e8-8fa0-c7257f67aa53.png)
    ![imagen27](https://user-images.githubusercontent.com/39604832/46702002-2f861380-cbe7-11e8-8846-c08867501548.png)
 
+#### Decrypt
+This service allows the user to upload a local JSON file for decryption.
+```
+Input:
+	1 and 5
+Output:
+	2 via postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:2121/decrypt
+		Input params:
+			json: document in JSON format
+			key: keys sent to users email
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+
+   ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
+
+#### Decrypt/ocb-local
+This service allows the user to decrypt entities from a Context Broker URL.
+```
+Input:
+	1, 2, and 5
+Output:
+	2 via postman/insomnia interface
+
+Postman/Insomnia specifications
+	Http endpoint:
+		URL: http://127.0.0.1:2121/decrypt/ocb-local
+		Input params:
+			urlFrom: example http://127.0.0.1:1026/v2/entities
+			id: id attribute to identify the entity
+			type: type attribute to identify the entity
+			key : keys sent to users email
+		Headers:
+			Fiware-Service:'default'
+			Fiware-ServicePath:'/'
+```
+<a href="https://ibb.co/e96th0"><img src="https://preview.ibb.co/fRFVUf/Decrypt-from-OCB-to-Local.png" alt="Decrypt-from-OCB-to-Local" border="0"></a>
+
 #### Decrypt/ocb
 This service allows the user to decrypt entities from a Context Broker URL.
 ```
@@ -438,50 +482,6 @@ Postman/Insomnia specifications
 ```
 
    ![imagen28](https://user-images.githubusercontent.com/39604832/46702004-2f861380-cbe7-11e8-8f2b-1e8d4ffd39d0.png)
-
-#### Encrypt/ocb/local
-This service allows the user to encrypt entities from a Context Broker URL.
-```
-Input:
-	1 and 2
-Output:
-	5 via email or postman/insomnia interface
-
-Postman/Insomnia specifications
-	Http endpoint:
-		URL: http://127.0.0.1:2121/encrypt/ocb/local
-		Input params:
-			urlFrom: example http://127.0.0.1:1026/v2/entities
-			id: id attribute to identify the entity
-			type: type attribute to identify the entity
-		Headers:
-			Fiware-Service:'default'
-			Fiware-ServicePath:'/'
-```
-<a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
-![mail](https://user-images.githubusercontent.com/38957081/48510835-9916c480-e81a-11e8-90cb-39d5d9ca2ffa.png)
-
-#### Decrypt/ocb/local
-This service allows the user to decrypt entities from a Context Broker URL.
-```
-Input:
-	1, 2, and 5
-Output:
-	2 via postman/insomnia interface
-
-Postman/Insomnia specifications
-	Http endpoint:
-		URL: http://127.0.0.1:2121/decrypt/ocb/local
-		Input params:
-			urlFrom: example http://127.0.0.1:1026/v2/entities
-			id: id attribute to identify the entity
-			type: type attribute to identify the entity
-			key : keys sent to users email
-		Headers:
-			Fiware-Service:'default'
-			Fiware-ServicePath:'/'
-```
-<a href="https://ibb.co/e96th0"><img src="https://preview.ibb.co/fRFVUf/Decrypt-from-OCB-to-Local.png" alt="Decrypt-from-OCB-to-Local" border="0"></a>
 
 #### Sign out
 This service allows the user to sign out of the encryption service.
