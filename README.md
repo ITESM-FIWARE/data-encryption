@@ -69,10 +69,12 @@ HTTP endpoint:
 The services that both stand-alone implemented services comprises are:
 * Sign up
 * Sign in
-* Encrypt (Encryption of a local JSON file)
-* Decrypt (Decryption of a local JSON file)
-* Encrypt/ocb (Encryption of entities from Context Broker URL)
-* Decrypt/ocb (Decryption of entities from Context Broker URL)
+* Encryption of a local JSON file
+* Encryption of entities from a Context Broker URL
+* Encryption of a local JSON file or entities from a Context Broker URL and send them to a Context Broker URL
+* Decryption of a local JSON file 
+* Decryption of entities from a Context Broker URL
+* Decryption of a local JSON file or entities from a Context Broker URL and send them to a Context Broker URL
 
 ## Encryption service with tokens
 The stand-alone encryption service that uses tokens as a verification measure is described below. First, the instructions to deploy and execute the service are described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
@@ -137,8 +139,8 @@ Postman/Insomnia specifications
 
    ![imagen7](https://user-images.githubusercontent.com/39604832/46701978-2dbc5000-cbe7-11e8-9e23-bf5d77eee244.png)
 
-#### Encrypt
-This service allows the user to upload a local JSON file for encryption.
+#### Encryption of a local JSON file
+This process shows an example of how a user uploads a local JSON file into the service, encrypt it, and then view the encrypted JSON file through the postman/insomnia interface and receive the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension. This service do not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 6
@@ -160,8 +162,8 @@ Postman/Insomnia specifications
    ![imagen9](https://user-images.githubusercontent.com/39604832/46701980-2dbc5000-cbe7-11e8-9b41-35bb4544d976.png)
    ![imagen10](https://user-images.githubusercontent.com/39604832/46701981-2dbc5000-cbe7-11e8-861d-52afe1390885.png)
 
-#### Encrypt/ocb-local
-This service allows the user to encrypt entities from a Context Broker URL.
+#### Encryption of entities from a Context Broker URL
+This process shows an example of how a user specifies entities from a Context Broker URL, encrypt them, and then view the encrypted JSON file through the postman/insomnia interface and receive the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension. This service do not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 2
@@ -183,8 +185,8 @@ Postman/Insomnia specifications
 
    ![image10](https://user-images.githubusercontent.com/38046220/48510388-64563d80-e819-11e8-8eb7-d8f77d936095.png)
 
-#### Encrypt/ocb
-This service allows the user to encrypt entities from a Context Broker URL.
+#### Encryption of a local JSON file or entities from a Context Broker URL and send them to a Context Broker URL
+This process shows an example of how a user specifies entities from a Context Broker URL or uploads a local JSON file, encrypt them/it, and then send the encrypted entities to an Orion Context Broker URL. Furthermore, the service shows the encrypted JSON file or entities through the postman/insomnia interface and the user receive the keys for decrypt the information via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension.
 ```
 Input:
 	1 and 2
