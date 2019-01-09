@@ -482,7 +482,7 @@
 				{
 					"name": "Encrypt from OCB to OCB",
 					"request": {
-						"url": "http://localhost:2121/decrypt/ocb",
+						"url": "http://localhost:2121/encrypt/ocb",
 						"method": "POST",
 						"header": [
 							{
