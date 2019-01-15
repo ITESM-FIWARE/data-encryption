@@ -20,8 +20,8 @@ The following software must be previously installed in the server which will hol
 1. [Postman](https://www.getpostman.com/apps)/[Insomnia](https://insomnia.rest/download/)
 
 Furthermore, the following ports containers are required.
-1. ngsi_nodejs 8000 (only for stand-alone encryption service that uses tokens)
-1. ngsi_python 2121 (only for stand-alone encryption service that uses sessions)
+1. ngsi_nodejs 8000 (only for the token-based service)
+1. ngsi_python 2121 (only for the session-based service)
 
 
 ## How to use
@@ -74,7 +74,7 @@ HTTP endpoint:
 
 
 ## A walkthrough
-### Encryption service with tokens
+### Token-based service
 The stand-alone encryption service that uses tokens as a verification measure is described below. First, the instructions to deploy and execute the service are described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
 
 #### Deployment and execution instructions
@@ -277,7 +277,7 @@ Postman/Insomnia specifications
    ![imagen14](https://user-images.githubusercontent.com/39604832/46701986-2e54e680-cbe7-11e8-9a8d-257a5e7aeb47.png)
 
 
-### Encryption service with sessions
+### Session-based service
 The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
 
 #### Deployment and execution instructions
