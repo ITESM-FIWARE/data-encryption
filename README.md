@@ -318,10 +318,8 @@ Postman/Insomnia specifications
 			email: 4
 			password: user password
 ```
-
-   ![imagen20](https://user-images.githubusercontent.com/39604832/46701993-2eed7d00-cbe7-11e8-8c5d-59ed7fd86c19.png)
-   ![imagen21](https://user-images.githubusercontent.com/39604832/46701994-2eed7d00-cbe7-11e8-8d98-d622df50e96a.png)
-
+   ![10 formulario body](https://user-images.githubusercontent.com/38957081/51272661-54c9b100-1990-11e9-88e6-6d56a694976c.png)
+   ![11 respuesta sigup](https://user-images.githubusercontent.com/38957081/51272662-54c9b100-1990-11e9-8bcc-dcf02572f846.png)
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services.
 ```
@@ -341,8 +339,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 
-   ![10 formulario body](https://user-images.githubusercontent.com/38957081/51272661-54c9b100-1990-11e9-88e6-6d56a694976c.png)
-   ![11 respuesta sigup](https://user-images.githubusercontent.com/38957081/51272662-54c9b100-1990-11e9-8bcc-dcf02572f846.png)
+   
 
 #### Encryption of a local JSON file
 This process shows an example of how a user uploads a local JSON file into the service, encrypt it, and then view the encrypted JSON file through the postman/insomnia interface and receive the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download directly from the postman/insomnia interface. This service does not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
