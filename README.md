@@ -318,7 +318,7 @@ Postman/Insomnia specifications
 			email: 4
 			password: user password
 ```
-
+.
 	![10 formulario body](https://user-images.githubusercontent.com/38957081/51272661-54c9b100-1990-11e9-88e6-6d56a694976c.png)
 	![11 respuesta sigup](https://user-images.githubusercontent.com/38957081/51272662-54c9b100-1990-11e9-8bcc-dcf02572f846.png)
 #### Sign in
