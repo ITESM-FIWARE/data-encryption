@@ -75,7 +75,7 @@ HTTP endpoint:
 
 ## A walkthrough
 ### Token-based service
-The stand-alone encryption service that uses tokens as a verification measure is described below. First, the instructions to deploy and execute the service are described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
+The stand-alone encryption service that uses tokens as a verification measure is described below.
 
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
@@ -278,7 +278,7 @@ Postman/Insomnia specifications
 
 
 ### Session-based service
-The stand-alone encryption service that uses sessions as a verification measure is described below. First, the instructions to deploy and execute the service is described; then the sign-up, sign in, encrypt, decrypt, encrypt/ocb, and decrypt/ocb processes are detailed. 
+The stand-alone encryption service that uses sessions as a verification measure is described below.
 
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
