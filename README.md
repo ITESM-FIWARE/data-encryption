@@ -319,8 +319,8 @@ Postman/Insomnia specifications
 			password: user password
 ```
 .
-	![10 formulario body](https://user-images.githubusercontent.com/38957081/51272661-54c9b100-1990-11e9-88e6-6d56a694976c.png)
-	![11 respuesta sigup](https://user-images.githubusercontent.com/38957081/51272662-54c9b100-1990-11e9-8bcc-dcf02572f846.png)
+	![sign up](https://user-images.githubusercontent.com/38957081/51338866-991c8600-1a50-11e9-8bbb-88022ce47d45.png)
+	![sign up_respuesta_mail](https://user-images.githubusercontent.com/38957081/51338867-991c8600-1a50-11e9-913f-64476d88a355.png)
 	![12 respuesta signup email](https://user-images.githubusercontent.com/38957081/51286622-5cea1680-19b9-11e9-9076-ca0619096126.png)
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services.
@@ -340,7 +340,7 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-![13 login](https://user-images.githubusercontent.com/38957081/51286826-47292100-19ba-11e9-9716-745636bb70da.png)
+![sign in](https://user-images.githubusercontent.com/38957081/51339002-eef12e00-1a50-11e9-9078-f6477e354a5d.png)
 ![14 login respuesta](https://user-images.githubusercontent.com/38957081/51287553-ad637300-19bd-11e9-87fd-05024da4db31.png)
 
 #### Encryption of a local JSON file
