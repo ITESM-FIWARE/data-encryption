@@ -134,7 +134,7 @@ Postman/Insomnia specifications
    ![imagen7](https://user-images.githubusercontent.com/39604832/46701978-2dbc5000-cbe7-11e8-9e23-bf5d77eee244.png)   
 
 #### Encryption of a local JSON file
-This process shows an example of how a user uploads a local JSON file into the service, encrypt it, sees the encrypted JSON file through the postman/insomnia interface and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user uploads a local JSON file into the service, encrypt it, sees the encrypted JSON file through the postman/insomnia interface, and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 6
@@ -157,7 +157,7 @@ Postman/Insomnia specifications
    ![imagen10](https://user-images.githubusercontent.com/39604832/46701981-2dbc5000-cbe7-11e8-861d-52afe1390885.png)
 
 #### Encryption of entities from an Orion Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL, encrypt them, sees the encrypted entities through the postman/insomnia interface and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL, encrypt them, sees the encrypted entities through the postman/insomnia interface, and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 2
@@ -180,7 +180,7 @@ Postman/Insomnia specifications
    ![image10](https://user-images.githubusercontent.com/38046220/48510388-64563d80-e819-11e8-8eb7-d8f77d936095.png)
 
 #### Encryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file, encrypt them/it and send the encrypted entities to an Orion Context Broker URL. Furthermore, the service shows the encrypted JSON file or entities through the postman/insomnia interface and the user receives the keys for decrypt the information via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download directly from the postman/insomnia interface.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file, encrypt them/it, and send the encrypted entities to an Orion Context Broker URL. Furthermore, the service shows the encrypted JSON file or entities through the postman/insomnia interface and the user receives the keys for decrypt the information via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download directly from the postman/insomnia interface.
 ```
 Input:
 	1 and 2
@@ -204,7 +204,7 @@ Postman/Insomnia specifications
    ![imagen13](https://user-images.githubusercontent.com/39604832/46701984-2e54e680-cbe7-11e8-80fc-b3d0452e90a8.png)
 
 #### Decryption of a local JSON file
-This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it and sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it, and sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 5
@@ -227,7 +227,7 @@ Postman/Insomnia specifications
    ![imagen12](https://user-images.githubusercontent.com/39604832/46701983-2dbc5000-cbe7-11e8-9d83-0f4085cbc028.png)
 
 #### Decryption of entities from an Orion Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL and uploads its corresponding key's file into the service, decrypt them and sees the decrypted entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL and uploads its corresponding key's file into the service, decrypt them, and sees the decrypted entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1, 2, and 5
@@ -251,7 +251,7 @@ Postman/Insomnia specifications
    ![image11](https://user-images.githubusercontent.com/38046220/48510488-a1bacb00-e819-11e8-9f66-3e57c73bd7b2.png)
 
 #### Decryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file with its corresponding key's file, decrypt them/it and then send the decrypted entities to an Orion Context Broker URL. Furthermore, the service shows the decrypted JSON file or entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file with its corresponding key's file, decrypt them/it, and then send the decrypted entities to an Orion Context Broker URL. Furthermore, the service shows the decrypted JSON file or entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
 ```
 Input:
 	1, 2, and 5
@@ -345,7 +345,7 @@ Postman/Insomnia specifications
 ![14 login respuesta](https://user-images.githubusercontent.com/38957081/51287553-ad637300-19bd-11e9-87fd-05024da4db31.png)
 
 #### Encryption of a local JSON file
-This process shows an example of how a user uploads a local JSON file into the service, encrypt it, sees the encrypted JSON file through the postman/insomnia interface and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user uploads a local JSON file into the service, encrypt it, sees the encrypted JSON file through the postman/insomnia interface, and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1
@@ -366,7 +366,7 @@ Postman/Insomnia specifications
    ![imagen24](https://user-images.githubusercontent.com/39604832/46701999-2eed7d00-cbe7-11e8-8b7f-4faf490d6c18.png)
 
 #### Encryption of entities from an Orion Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL, encrypt them, sees the encrypted entities through the postman/insomnia interface and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL, encrypt them, sees the encrypted entities through the postman/insomnia interface, and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 2
@@ -413,7 +413,7 @@ Postman/Insomnia specifications
 
 
 #### Decryption of a local JSON file
-This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it and then sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it, and then sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1 and 5
@@ -434,7 +434,7 @@ Postman/Insomnia specifications
    ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
 
 #### Decryption of entities from an Orion Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL and uploads its corresponding key's file into the service, decrypt them and then sees the decrypted entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL and uploads its corresponding key's file into the service, decrypt them, and then sees the decrypted entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
 ```
 Input:
 	1, 2, and 5
@@ -456,7 +456,7 @@ Postman/Insomnia specifications
 <a href="https://ibb.co/e96th0"><img src="https://preview.ibb.co/fRFVUf/Decrypt-from-OCB-to-Local.png" alt="Decrypt-from-OCB-to-Local" border="0"></a>
 
 #### Decryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
-This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file with its corresponding key's file, decrypt them/it and then send the decrypted entities to an Orion Context Broker URL. Furthermore, the service shows the decrypted JSON file or entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
+This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file with its corresponding key's file, decrypt them/it, and then send the decrypted entities to an Orion Context Broker URL. Furthermore, the service shows the decrypted JSON file or entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
 ```
 Input:
 	1, 2, and 5
