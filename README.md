@@ -384,8 +384,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
-![mail](https://user-images.githubusercontent.com/38957081/48510835-9916c480-e81a-11e8-90cb-39d5d9ca2ffa.png)
-
+![obclocalresponce](https://user-images.githubusercontent.com/38957081/51287735-996c4100-19be-11e9-9ba9-18e4c6e9c640.png)
 #### Encryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
 This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file, encrypt them/it, and then send the encrypted entities to an Orion Context Broker URL. Furthermore, the service shows the encrypted JSON file or entities through the postman/insomnia interface and the user receive the keys for decrypt the information via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download directly from the postman/insomnia interface.
 ```
@@ -407,7 +406,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 
-   ![imagen26](https://user-images.githubusercontent.com/39604832/46702001-2f861380-cbe7-11e8-8fa0-c7257f67aa53.png)
+   ![ocbtoocb](https://user-images.githubusercontent.com/38957081/51287912-65dde680-19bf-11e9-819b-050e79fd8660.png)
    ![imagen27](https://user-images.githubusercontent.com/39604832/46702002-2f861380-cbe7-11e8-8846-c08867501548.png)
 
 #### Decryption of a local JSON file
