@@ -407,7 +407,8 @@ Postman/Insomnia specifications
 ```
 
    ![ocbtoocb](https://user-images.githubusercontent.com/38957081/51287912-65dde680-19bf-11e9-819b-050e79fd8660.png)
-   ![imagen27](https://user-images.githubusercontent.com/39604832/46702002-2f861380-cbe7-11e8-8846-c08867501548.png)
+   ![ocbtoocbmail](https://user-images.githubusercontent.com/38957081/51337819-c0258880-1a4d-11e9-8913-e1aa75be0172.png)
+
 
 #### Decryption of a local JSON file
 This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it, and then view the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
@@ -491,5 +492,5 @@ Postman/Insomnia specifications
 		  None
 ```
 
-![imagen29](https://user-images.githubusercontent.com/39604832/46702005-2f861380-cbe7-11e8-8745-d371283036f7.png)
+![sign out](https://user-images.githubusercontent.com/38957081/51338291-0b8c6680-1a4f-11e9-8723-04b97d71d8de.png)
 
