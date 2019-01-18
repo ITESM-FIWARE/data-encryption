@@ -1,4 +1,4 @@
-# NGSI-Encryption-Layer-as-a-Service
+# NGSI-Encryption-Layer-as-a-Service (data encryption)
 
 This document describes the encryption service developed at ITESM as a tool for encrypting and decrypting [FIWARE data models](https://www.fiware.org/developers/data-models/). 
 
