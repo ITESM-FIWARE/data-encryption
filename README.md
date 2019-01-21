@@ -361,11 +361,12 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<img src="https://user-images.githubusercontent.com/38957081/51497057-845d2c80-1d87-11e9-9738-3b0c5592e280.png">
-<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
-<img src="https://user-images.githubusercontent.com/38957081/51497071-9048ee80-1d87-11e9-8ddc-613f5b7cc3d4.png">
-<img src="https://user-images.githubusercontent.com/38957081/51497085-9a6aed00-1d87-11e9-95ae-7e825db24f30.png">
-
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51497057-845d2c80-1d87-11e9-9738-3b0c5592e280.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51497071-9048ee80-1d87-11e9-8ddc-613f5b7cc3d4.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51497085-9a6aed00-1d87-11e9-95ae-7e825db24f30.png">
+</div>
 
 #### Encryption of entities from an Orion Context Broker URL
 This process shows an example of how a user specifies entities from an Orion Context Broker URL, encrypt them, sees the encrypted entities through the postman/insomnia interface, and receives the keys for decrypt the JSON file via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the encrypted entities to an Orion Context Broker URL; the service that allows this is explained below.
