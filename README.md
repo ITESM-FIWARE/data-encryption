@@ -345,7 +345,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51339002-eef12e00-1a50-11e9-9078-f6477e354a5d.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51502737-fdb34a00-1d9c-11e9-9ca0-1058ba9970b4.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51287553-ad637300-19bd-11e9-87fd-05024da4db31.png">
 </div>
@@ -368,7 +368,7 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51497057-845d2c80-1d87-11e9-9738-3b0c5592e280.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51502626-82519880-1d9c-11e9-9132-a801805a5052.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
 	<br><br><br>
