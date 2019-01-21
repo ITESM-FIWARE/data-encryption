@@ -449,7 +449,7 @@ Postman/Insomnia specifications
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51501011-d6a54a00-1d95-11e9-93d0-8599aa9abf39.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501012-d6a54a00-1d95-11e9-857b-822bb6d71fde.png
+	<img src="https://user-images.githubusercontent.com/38957081/51501012-d6a54a00-1d95-11e9-857b-822bb6d71fde.png">
 </div>
 
 #### Decryption of a local JSON file
@@ -500,7 +500,21 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<a href="https://ibb.co/e96th0"><img src="https://preview.ibb.co/fRFVUf/Decrypt-from-OCB-to-Local.png" alt="Decrypt-from-OCB-to-Local" border="0"></a>
+<div>
+	<img src="https://user-images.githubusercontent.com/38957081/51501465-9e9f0680-1d97-11e9-9dce-241bad2a10c4.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501466-9e9f0680-1d97-11e9-84ef-6b88926c5adb.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501467-9f379d00-1d97-11e9-8444-56cd2ebbce6d.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501468-9f379d00-1d97-11e9-8e13-cc30f7f38cc4.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501469-9f379d00-1d97-11e9-946d-1f6c1290ec34.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501470-9f379d00-1d97-11e9-993d-142b959f3ca3.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501471-9f379d00-1d97-11e9-9eae-d73da1da9937.png">
+</div>
 
 #### Decryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
 This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file with its corresponding key's file, decrypt them/it, and then send the decrypted entities to an Orion Context Broker URL. Furthermore, the service shows the decrypted JSON file or entities through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
