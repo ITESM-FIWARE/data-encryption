@@ -399,7 +399,7 @@ Postman/Insomnia specifications
 <div>
 	<img src="https://user-images.githubusercontent.com/38957081/51500329-34846280-1d93-11e9-9cd9-43955a899f1e.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500328-34846280-1d93-11e9-8888-e450116c20da.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51502289-086cdf80-1d9b-11e9-9868-80824ebebfd0.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500331-351cf900-1d93-11e9-9eb0-d37baac8bb64.png">
 	<br><br><br>
@@ -470,13 +470,13 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div align="center">
-	<img src="https://user-images.githubusercontent.com/38957081/51498127-0ac73d80-1d8b-11e9-8b1b-f369810f338e.png">
-	<br>
+<div>
+	<img src="https://user-images.githubusercontent.com/38957081/51501843-2f2a1680-1d99-11e9-9704-aea414486781.png">
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51498128-0ac73d80-1d8b-11e9-916c-46f0bf69b6f4.png">
-	<br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51498129-0ac73d80-1d8b-11e9-9f20-e5e45fd736f4.png">
-	<br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51498130-0ac73d80-1d8b-11e9-9e43-2deb7d48600c.png">
 </div>
  
@@ -501,9 +501,9 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51501465-9e9f0680-1d97-11e9-9dce-241bad2a10c4.png">
-	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51501466-9e9f0680-1d97-11e9-84ef-6b88926c5adb.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501465-9e9f0680-1d97-11e9-9dce-241bad2a10c4.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51501467-9f379d00-1d97-11e9-8444-56cd2ebbce6d.png">
 	<br><br><br>
