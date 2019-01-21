@@ -318,13 +318,11 @@ Postman/Insomnia specifications
 			email: 4
 			password: user password
 ```
-<div align="center">
+<div>
 	<img src="https://user-images.githubusercontent.com/38957081/51338866-991c8600-1a50-11e9-8bbb-88022ce47d45.png">
-	<br>
-	<br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51338867-991c8600-1a50-11e9-913f-64476d88a355.png">
-	<br>
-	<br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51286622-5cea1680-19b9-11e9-9076-ca0619096126.png">
 </div>	
 
@@ -346,10 +344,9 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div align="center">
+<div>
 	<img src="https://user-images.githubusercontent.com/38957081/51339002-eef12e00-1a50-11e9-9078-f6477e354a5d.png">
-	<br>
-	<br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51287553-ad637300-19bd-11e9-87fd-05024da4db31.png">
 </div>
 
@@ -370,13 +367,13 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div align="center">
+<div>
 	<img src="https://user-images.githubusercontent.com/38957081/51497057-845d2c80-1d87-11e9-9738-3b0c5592e280.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497071-9048ee80-1d87-11e9-8ddc-613f5b7cc3d4.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497085-9a6aed00-1d87-11e9-95ae-7e825db24f30.png">
 </div>
 
@@ -399,24 +396,21 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div align="center">
+<div>
 	<img src="https://user-images.githubusercontent.com/38957081/51500329-34846280-1d93-11e9-9cd9-43955a899f1e.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500328-34846280-1d93-11e9-8888-e450116c20da.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500331-351cf900-1d93-11e9-9eb0-d37baac8bb64.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500332-351cf900-1d93-11e9-978d-bfea85960e26.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500333-351cf900-1d93-11e9-8351-065b8d8b0a3f.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500335-351cf900-1d93-11e9-859e-af96f577d5aa.png">
-	<br><br>
+	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500336-351cf900-1d93-11e9-9aab-c12fdc38e2ed.png">
 </div>
-<a href="https://ibb.co/dwZ2aL"><img src="https://preview.ibb.co/kXpqUf/Encrypt-from-OCB-to-Local.png" alt="Encrypt-from-OCB-to-Local" border="0"></a>
-![obclocalresponce](https://user-images.githubusercontent.com/38957081/51287735-996c4100-19be-11e9-9ba9-18e4c6e9c640.png)
-
 #### Encryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
 This process shows an example of how a user specifies entities from an Orion Context Broker URL or uploads a local JSON file, encrypt them/it, and then send the encrypted entities to an Orion Context Broker URL. Furthermore, the service shows the encrypted JSON file or entities through the postman/insomnia interface and the user receives the keys for decrypt the information via email. To download the encrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface.
 ```
@@ -437,10 +431,25 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-
-   ![ocbtoocb](https://user-images.githubusercontent.com/38957081/51287912-65dde680-19bf-11e9-819b-050e79fd8660.png)
-   ![ocbtoocbmail](https://user-images.githubusercontent.com/38957081/51337819-c0258880-1a4d-11e9-8913-e1aa75be0172.png)
-
+<div>
+	<img src="https://user-images.githubusercontent.com/38957081/51501003-d5741d00-1d95-11e9-8833-4b8d2e30073d.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501001-d5741d00-1d95-11e9-8628-ae715c24622f.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501005-d5741d00-1d95-11e9-81f7-e5cc839217a9.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501006-d60cb380-1d95-11e9-87b6-b9d0c0895048.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501007-d60cb380-1d95-11e9-8b36-88a82de0a8ac.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501008-d60cb380-1d95-11e9-8bfb-ed50a5a03f89.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501009-d60cb380-1d95-11e9-9945-cedd2064abe2.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501011-d6a54a00-1d95-11e9-93d0-8599aa9abf39.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51501012-d6a54a00-1d95-11e9-857b-822bb6d71fde.png
+<div>
 
 #### Decryption of a local JSON file
 This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it, and then sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
