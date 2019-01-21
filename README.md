@@ -363,8 +363,11 @@ Postman/Insomnia specifications
 ```
 <div align="center">
 	<img src="https://user-images.githubusercontent.com/38957081/51497057-845d2c80-1d87-11e9-9738-3b0c5592e280.png">
+	<br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
+	<br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497071-9048ee80-1d87-11e9-8ddc-613f5b7cc3d4.png">
+	<br>
 	<img src="https://user-images.githubusercontent.com/38957081/51497085-9a6aed00-1d87-11e9-95ae-7e825db24f30.png">
 </div>
 
@@ -433,6 +436,15 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51498127-0ac73d80-1d8b-11e9-8b1b-f369810f338e.png">
+	<br>
+	<img src="https://user-images.githubusercontent.com/38957081/51498128-0ac73d80-1d8b-11e9-916c-46f0bf69b6f4.png">
+	<br>
+	<img src="https://user-images.githubusercontent.com/38957081/51498129-0ac73d80-1d8b-11e9-9f20-e5e45fd736f4.png">
+	<br>
+	<img src="https://user-images.githubusercontent.com/38957081/51498130-0ac73d80-1d8b-11e9-9e43-2deb7d48600c.png">
+<div>
 
    ![imagen25](https://user-images.githubusercontent.com/39604832/46702000-2f861380-cbe7-11e8-9cf8-59a9cbed4ee8.png)
 
