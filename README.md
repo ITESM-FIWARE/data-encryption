@@ -319,7 +319,7 @@ Postman/Insomnia specifications
 			password: user password
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51338866-991c8600-1a50-11e9-8bbb-88022ce47d45.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51502836-88944480-1d9d-11e9-9eb6-57340c7fbe38.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51338867-991c8600-1a50-11e9-913f-64476d88a355.png">
 	<br><br><br>
@@ -537,9 +537,25 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-
-   ![imagen28](https://user-images.githubusercontent.com/39604832/46702004-2f861380-cbe7-11e8-8f2b-1e8d4ffd39d0.png)
-
+<div>
+	<img src="https://user-images.githubusercontent.com/38957081/51503047-8ed6f080-1d9e-11e9-88e8-a265f68890e5.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503045-8ed6f080-1d9e-11e9-9bc7-c4db7c8e9677.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503048-8f6f8700-1d9e-11e9-947e-0cde14238e16.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503049-8f6f8700-1d9e-11e9-9ac6-886f5bd682d6.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503050-8f6f8700-1d9e-11e9-8381-de36162b853f.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503051-8f6f8700-1d9e-11e9-9bba-9b86e1f49f90.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503052-8f6f8700-1d9e-11e9-9319-59920af603f3.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503053-8f6f8700-1d9e-11e9-918d-5fd5b983a851.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51503054-90081d80-1d9e-11e9-81f3-f97efb62617d.png">
+</div>
 #### Sign out
 This service allows the user to sign out of the encryption service.
 ```
