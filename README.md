@@ -556,6 +556,7 @@ Postman/Insomnia specifications
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51503054-90081d80-1d9e-11e9-81f3-f97efb62617d.png">
 </div>
+
 #### Sign out
 This service allows the user to sign out of the encryption service.
 ```
