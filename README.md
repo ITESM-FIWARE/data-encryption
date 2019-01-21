@@ -399,7 +399,7 @@ Postman/Insomnia specifications
 <div>
 	<img src="https://user-images.githubusercontent.com/38957081/51500329-34846280-1d93-11e9-9cd9-43955a899f1e.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51502289-086cdf80-1d9b-11e9-9868-80824ebebfd0.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51502447-ca23f000-1d9b-11e9-9d3c-7e007d37e0c1.png">
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51500331-351cf900-1d93-11e9-9eb0-d37baac8bb64.png">
 	<br><br><br>
