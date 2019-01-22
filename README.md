@@ -343,25 +343,25 @@ The stand-alone encryption service that uses sessions as a verification measure 
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
-1. Locate at the service folder location: ```cd ../NGSI_PYTHON_DOCKER/```
+1. Locate at the service folder location: ```cd ../data-encrypt/session based```
 
-	![imagen15](https://user-images.githubusercontent.com/39604832/46701987-2e54e680-cbe7-11e8-9634-c62be7b676d9.png)
-
+	![1 cd data-ecryption](https://user-images.githubusercontent.com/38957081/51509159-c43f0680-1dbd-11e9-9483-595b85c8ddbe.png)
+	![2 cd session-based](https://user-images.githubusercontent.com/38957081/51509160-c43f0680-1dbd-11e9-88d5-0d22e9f1967a.png)
 2. Create a new folder named “data”: ```mkdir data```
 
-	![imagen16](https://user-images.githubusercontent.com/39604832/46701988-2e54e680-cbe7-11e8-8e7f-e00182ba71f8.png)
+	![3 mkdir data](https://user-images.githubusercontent.com/38957081/51509161-c43f0680-1dbd-11e9-9b08-509ae1c9a1d0.png)
 
 3. Start the docker compose: ```sudo docker-compose up -d```
 
-	![imagen17](https://user-images.githubusercontent.com/39604832/46701990-2e54e680-cbe7-11e8-8602-270fa121f8a4.png)
+	![4 sudo docker-compose up -d](https://user-images.githubusercontent.com/38957081/51509162-c43f0680-1dbd-11e9-9b9d-b55aec31e817.png)
 
 4. Check docker containers status: ```docker ps```
 
-	![imagen18](https://user-images.githubusercontent.com/39604832/46701991-2e54e680-cbe7-11e8-84fc-18a46010a29d.png)
-
+	![5 docker ps](https://user-images.githubusercontent.com/38957081/51509163-c43f0680-1dbd-11e9-97f5-41443378c8bb.png)
+	
 5. Verify that the service is up and running: ```http://localhost:2121```
 
-	![imagen19](https://user-images.githubusercontent.com/39604832/46701992-2eed7d00-cbe7-11e8-8603-8dd47f8066e4.png)
+	![6 localhost 2121](https://user-images.githubusercontent.com/38957081/51509164-c43f0680-1dbd-11e9-9276-8b6e7f660ad6.png)
 
 #### Sign up
 This service allows the user to authenticate itself for the first time into the encryption service.
@@ -380,11 +380,9 @@ Postman/Insomnia specifications
 			password: user password
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51502836-88944480-1d9d-11e9-9eb6-57340c7fbe38.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51338867-991c8600-1a50-11e9-913f-64476d88a355.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51286622-5cea1680-19b9-11e9-9076-ca0619096126.png">
+	![7 sign up](https://user-images.githubusercontent.com/38957081/51509333-4e876a80-1dbe-11e9-9bcf-0f4382aa290e.png)
+	![8 sign up responce](https://user-images.githubusercontent.com/38957081/51509334-4e876a80-1dbe-11e9-9210-5eddc49a27fe.png)
+	![9 sign up responce mail](https://user-images.githubusercontent.com/38957081/51509335-4e876a80-1dbe-11e9-8155-a7b9a712112b.png)
 </div>	
 
 #### Sign in
