@@ -499,6 +499,7 @@ Postman/Insomnia specifications
 	<br><br><br>
 	<img src="https://user-images.githubusercontent.com/38957081/51509750-f0f41d80-1dbf-11e9-9d58-c6df0dce0f72.png">
 </div>
+
 #### Decryption of a local JSON file
 This process shows an example of how a user uploads a local encrypted JSON file and its corresponding key's file into the service, decrypt it, and then sees the decrypted JSON file through the postman/insomnia interface. To download the decrypted JSON file, the user must copy the postman/insomnia response into a text file and save it with the JSON extension or download it directly from the postman/insomnia interface. This service does not send the decrypted JSON file to an Orion Context Broker URL; the service that allows this is explained below.
 ```
@@ -518,13 +519,13 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51501843-2f2a1680-1d99-11e9-9704-aea414486781.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510093-4ed53500-1dc1-11e9-9d77-1e53d1e7d32b.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51498128-0ac73d80-1d8b-11e9-916c-46f0bf69b6f4.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510094-4ed53500-1dc1-11e9-88b1-781c252e31ca.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51498129-0ac73d80-1d8b-11e9-9f20-e5e45fd736f4.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510095-4ed53500-1dc1-11e9-8246-282516c094af.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51498130-0ac73d80-1d8b-11e9-9e43-2deb7d48600c.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510096-4ed53500-1dc1-11e9-9f7b-8977ae54ee0e.png">
 </div>
  
 #### Decryption of entities from an Orion Context Broker URL
@@ -548,19 +549,11 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51501466-9e9f0680-1d97-11e9-84ef-6b88926c5adb.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510332-48938880-1dc2-11e9-865f-ff0bd507302c.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501465-9e9f0680-1d97-11e9-9dce-241bad2a10c4.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510333-492c1f00-1dc2-11e9-8d03-f78cc0832b5f.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501467-9f379d00-1d97-11e9-8444-56cd2ebbce6d.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501468-9f379d00-1d97-11e9-8e13-cc30f7f38cc4.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501469-9f379d00-1d97-11e9-946d-1f6c1290ec34.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501470-9f379d00-1d97-11e9-993d-142b959f3ca3.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51501471-9f379d00-1d97-11e9-9eae-d73da1da9937.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510334-492c1f00-1dc2-11e9-95dd-24a9aa43eef8.png">
 </div>
 
 #### Decryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
@@ -585,23 +578,13 @@ Postman/Insomnia specifications
 			Fiware-ServicePath:'/'
 ```
 <div>
-	<img src="https://user-images.githubusercontent.com/38957081/51503047-8ed6f080-1d9e-11e9-88e8-a265f68890e5.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510199-b55a5300-1dc1-11e9-850b-bbdc8a54cba9.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503045-8ed6f080-1d9e-11e9-9bc7-c4db7c8e9677.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510200-b55a5300-1dc1-11e9-99e2-017b248657ed.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503048-8f6f8700-1d9e-11e9-947e-0cde14238e16.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510201-b55a5300-1dc1-11e9-8c63-d37b331625d0.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503049-8f6f8700-1d9e-11e9-9ac6-886f5bd682d6.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503050-8f6f8700-1d9e-11e9-8381-de36162b853f.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503051-8f6f8700-1d9e-11e9-9bba-9b86e1f49f90.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503052-8f6f8700-1d9e-11e9-9319-59920af603f3.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503053-8f6f8700-1d9e-11e9-918d-5fd5b983a851.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51503054-90081d80-1d9e-11e9-81f3-f97efb62617d.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51510202-b55a5300-1dc1-11e9-8ef2-5d5d970a1936.png">
 </div>
 
 #### Sign out
@@ -619,5 +602,5 @@ Postman/Insomnia specifications
 		  None
 ```
 
-![sign out](https://user-images.githubusercontent.com/38957081/51338291-0b8c6680-1a4f-11e9-8723-04b97d71d8de.png)
+![35 sign out](https://user-images.githubusercontent.com/38957081/51510368-6fea5580-1dc2-11e9-83c7-28949c264ed2.png)
 
