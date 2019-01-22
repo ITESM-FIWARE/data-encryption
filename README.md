@@ -79,7 +79,7 @@ The stand-alone encryption service that uses tokens as a verification measure is
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
-1. Locate at the service folder location: ```cd token_based```
+1. Open a terminal in the location of the service's folder: ```cd token_based```
 
 	![001_cd](https://user-images.githubusercontent.com/38046220/51505513-85ed1b80-1dac-11e9-833b-b4a5f4d87824.png)
 
@@ -343,12 +343,12 @@ The stand-alone encryption service that uses sessions as a verification measure 
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
-1. Locate at the service folder location: ```cd ../data-encrypt/session based```
+1. Open a terminal in the location of the service's folder: ```cd ../data-encrypt/session based```
 
 	![1 cd data-ecryption](https://user-images.githubusercontent.com/38957081/51509159-c43f0680-1dbd-11e9-9483-595b85c8ddbe.png)
 	<br>
 	![2 cd session-based](https://user-images.githubusercontent.com/38957081/51509160-c43f0680-1dbd-11e9-88d5-0d22e9f1967a.png)
-2. Create a new folder named “data”: ```mkdir data```
+2. Create a new folder called “data”: ```mkdir data```
 
 	![3 mkdir data](https://user-images.githubusercontent.com/38957081/51509161-c43f0680-1dbd-11e9-9b08-509ae1c9a1d0.png)
 
