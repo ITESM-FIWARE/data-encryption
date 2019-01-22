@@ -79,19 +79,20 @@ The stand-alone encryption service that uses tokens as a verification measure is
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
-1. Locate at the service folder location: ```cd ../NGSI_NODEJS_DOCKER```
+1. Locate at the service folder location: ```cd token_based```
 
-	![imagen1](https://user-images.githubusercontent.com/39604832/46701972-2d23b980-cbe7-11e8-9010-24025322c196.png)
+	![001_cd](https://user-images.githubusercontent.com/38046220/51505513-85ed1b80-1dac-11e9-833b-b4a5f4d87824.png)
 
 2. Execute the docker pull command: ```docker pull ngsi/encryption_layer_as_a_service_nodejs```
+
+	![002_pull](https://user-images.githubusercontent.com/38046220/51505519-88e80c00-1dac-11e9-8578-26d720529fda.png)
 3. Start the docker compose: ```sudo docker-compose up -d```
 
-	![imagen2](https://user-images.githubusercontent.com/39604832/46699889-c6030680-cbe0-11e8-8fe3-8c19b8ae3e7b.png)
+	![003_compose](https://user-images.githubusercontent.com/38046220/51505521-8b4a6600-1dac-11e9-9d05-dd191cea3982.png)
 
 4. Check docker containers status: ```docker ps```
 
-	![imagen3](https://user-images.githubusercontent.com/39604832/46701974-2d23b980-cbe7-11e8-9139-03e789c82c44.png)
-	![imagen4](https://user-images.githubusercontent.com/39604832/46701975-2d23b980-cbe7-11e8-8de1-fa66adfac05b.png)
+	![004_ps](https://user-images.githubusercontent.com/38046220/51505524-8d142980-1dac-11e9-97ee-32868e0f4d60.png)
 
 5. Verify that the service is up and running: ```http://localhost:8000```
 
