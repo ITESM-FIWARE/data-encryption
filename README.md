@@ -343,7 +343,7 @@ The stand-alone encryption service that uses sessions as a verification measure 
 #### Deployment and execution instructions
 The following procedure denotes the instructions to deploy and execute the encryption service that will reside in the server.
 
-1. Open a terminal in the location of the service's folder: ```cd ../data-encrypt/session based```
+1. Open a terminal in the location of the service's folder: ```cd ../data-encryption/session based```
 
 	![1 cd data-ecryption](https://user-images.githubusercontent.com/38957081/51509159-c43f0680-1dbd-11e9-9483-595b85c8ddbe.png)
 	<br>
