@@ -381,9 +381,14 @@ Postman/Insomnia specifications
 			password: user password
 ```
 
-![7 sign up](https://user-images.githubusercontent.com/38957081/51509333-4e876a80-1dbe-11e9-9bcf-0f4382aa290e.png)
-![8 sign up responce](https://user-images.githubusercontent.com/38957081/51509334-4e876a80-1dbe-11e9-9210-5eddc49a27fe.png)
-![9 sign up responce mail](https://user-images.githubusercontent.com/38957081/51509335-4e876a80-1dbe-11e9-8155-a7b9a712112b.png)	
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51509333-4e876a80-1dbe-11e9-9bcf-0f4382aa290e.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51509334-4e876a80-1dbe-11e9-9210-5eddc49a27fe.png">
+	<br><br><br>
+	<img src="https://user-images.githubusercontent.com/38957081/51509335-4e876a80-1dbe-11e9-8155-a7b9a712112b.png">
+</div>
+
 
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services implemented.
@@ -403,10 +408,10 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div>
-	<img src="https://user-images.githubusercontent.com/38957081/51502737-fdb34a00-1d9c-11e9-9ca0-1058ba9970b4.png">
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51509540-2cdab300-1dbf-11e9-9eba-708394138851.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51287553-ad637300-19bd-11e9-87fd-05024da4db31.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509541-2cdab300-1dbf-11e9-9778-9eefda57e943.png">
 </div>
 
 #### Encryption of a local JSON file
@@ -426,14 +431,12 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div>
-	<img src="https://user-images.githubusercontent.com/38957081/51502626-82519880-1d9c-11e9-9132-a801805a5052.png">
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51509609-64e1f600-1dbf-11e9-8a58-96a4a28e3b7d.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51497062-89ba7700-1d87-11e9-9f80-47324104eacf.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509610-64e1f600-1dbf-11e9-9265-4a2a2c5a4616.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51497071-9048ee80-1d87-11e9-8ddc-613f5b7cc3d4.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51497085-9a6aed00-1d87-11e9-95ae-7e825db24f30.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509611-64e1f600-1dbf-11e9-8f05-877e2d0a148e.png">
 </div>
 
 #### Encryption of entities from an Orion Context Broker URL
@@ -455,20 +458,16 @@ Postman/Insomnia specifications
 			Fiware-Service:'default'
 			Fiware-ServicePath:'/'
 ```
-<div>
-	<img src="https://user-images.githubusercontent.com/38957081/51500329-34846280-1d93-11e9-9cd9-43955a899f1e.png">
+<div align="center">
+	<img src="https://user-images.githubusercontent.com/38957081/51509746-f05b8700-1dbf-11e9-8c7c-fc9fb8749f4e.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51502447-ca23f000-1d9b-11e9-9d3c-7e007d37e0c1.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509747-f0f41d80-1dbf-11e9-9532-bea279a620d7.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500331-351cf900-1d93-11e9-9eb0-d37baac8bb64.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509748-f0f41d80-1dbf-11e9-843e-a77b53b98ab1.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500332-351cf900-1d93-11e9-978d-bfea85960e26.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509749-f0f41d80-1dbf-11e9-8f54-eb9b28ca0fd7.png">
 	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500333-351cf900-1d93-11e9-8351-065b8d8b0a3f.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500335-351cf900-1d93-11e9-859e-af96f577d5aa.png">
-	<br><br><br>
-	<img src="https://user-images.githubusercontent.com/38957081/51500336-351cf900-1d93-11e9-9aab-c12fdc38e2ed.png">
+	<img src="https://user-images.githubusercontent.com/38957081/51509750-f0f41d80-1dbf-11e9-9d58-c6df0dce0f72.png">
 </div>
 
 #### Encryption of a local JSON file or entities from an Orion Context Broker URL and send them to a Context Broker URL
