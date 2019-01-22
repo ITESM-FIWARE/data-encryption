@@ -346,6 +346,7 @@ The following procedure denotes the instructions to deploy and execute the encry
 1. Locate at the service folder location: ```cd ../data-encrypt/session based```
 
 	![1 cd data-ecryption](https://user-images.githubusercontent.com/38957081/51509159-c43f0680-1dbd-11e9-9483-595b85c8ddbe.png)
+	<br>
 	![2 cd session-based](https://user-images.githubusercontent.com/38957081/51509160-c43f0680-1dbd-11e9-88d5-0d22e9f1967a.png)
 2. Create a new folder named “data”: ```mkdir data```
 
@@ -379,11 +380,10 @@ Postman/Insomnia specifications
 			email: 4
 			password: user password
 ```
-<div>
-	![7 sign up](https://user-images.githubusercontent.com/38957081/51509333-4e876a80-1dbe-11e9-9bcf-0f4382aa290e.png)
-	![8 sign up responce](https://user-images.githubusercontent.com/38957081/51509334-4e876a80-1dbe-11e9-9210-5eddc49a27fe.png)
-	![9 sign up responce mail](https://user-images.githubusercontent.com/38957081/51509335-4e876a80-1dbe-11e9-8155-a7b9a712112b.png)
-</div>	
+
+![7 sign up](https://user-images.githubusercontent.com/38957081/51509333-4e876a80-1dbe-11e9-9bcf-0f4382aa290e.png)
+![8 sign up responce](https://user-images.githubusercontent.com/38957081/51509334-4e876a80-1dbe-11e9-9210-5eddc49a27fe.png)
+![9 sign up responce mail](https://user-images.githubusercontent.com/38957081/51509335-4e876a80-1dbe-11e9-8155-a7b9a712112b.png)	
 
 #### Sign in
 This service allows the user to authenticate itself into the encryption service and use the several encryption and decryption services implemented.
