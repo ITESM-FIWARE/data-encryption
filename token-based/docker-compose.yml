@@ -5,7 +5,7 @@ mongodb:
     - ./data:/data/db
 
 encrypt:
-  image: ngsi/encryption_layer_as_a_service_nodejs
+  image: smartsdk/encryption-service-token
   container_name: ngsi_nodejs
   ports:
     - "8000:8000"
