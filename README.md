@@ -83,7 +83,7 @@ The following procedure denotes the instructions to deploy and execute the encry
 
 	![001_cd](https://user-images.githubusercontent.com/38046220/51505513-85ed1b80-1dac-11e9-833b-b4a5f4d87824.png)
 
-2. Execute the docker pull command: ```docker pull ngsi/encryption_layer_as_a_service_nodejs```
+2. Execute the docker pull command: ```docker pull smartsdk/encryption-service-token```
 
 	![003_pull](https://user-images.githubusercontent.com/38046220/51624554-b34ade00-1f00-11e9-95fe-22cdb849f325.png)
 3. Start the docker compose: ```sudo docker-compose up -d```
